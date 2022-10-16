@@ -327,7 +327,7 @@ function draw() {
     laserDGroup.destroyEach();
   }
 
-  if(touches.length > 0 ||keyDown("up_arrow")&& jason.y >= 570) {
+  if(keyDown("up_arrow")&& jason.y >= 570) {
     jason.velocityY = -25;
     jump.play();
   }
@@ -606,7 +606,7 @@ princessHappy.collide(portal1);
 princessHappy.collide(portal2);
 princessHappy.collide(ground);
 
-if(mousePressedOver(play)) {
+if(touches.lenght >0) {
   jason.visible = true;
   ground.visible = true;
   tower.visible = true;
