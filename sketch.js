@@ -606,7 +606,7 @@ princessHappy.collide(portal1);
 princessHappy.collide(portal2);
 princessHappy.collide(ground);
 
-if(touches.lenght >0) {
+if(touches.lenght >0 || keyDown("space")) {
   jason.visible = true;
   ground.visible = true;
   tower.visible = true;
